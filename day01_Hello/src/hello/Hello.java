@@ -14,6 +14,11 @@ public class Hello {
 		// sysout -> ctrl + s space bar
 		System.out.println("안녕하세요, 자바!");
 		// 소스 편집 후 ctrl + s
+		// add는 최초에 한 번만 한다.
+		// ctrl + shift + 3(#)
+		// commit 창에서 
+		// unstaged changes = before add 
+		// staged change = add
 	}
 
 }
