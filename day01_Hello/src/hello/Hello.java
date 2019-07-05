@@ -13,7 +13,7 @@ public class Hello {
 		// 자바 기본 출력 구문
 		// sysout -> ctrl + s space bar
 		System.out.println("안녕하세요, 자바!");
-		System.out.println("자바자바");
+		System.out.println("안녕하세요, 자바!");
 		// 소스 편집 후 ctrl + s
 		// add는 최초에 한 번만 한다.
 		// ctrl + shift + 3(#)
