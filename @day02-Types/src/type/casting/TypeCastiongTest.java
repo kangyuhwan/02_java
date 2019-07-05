@@ -20,6 +20,12 @@ public class TypeCastiongTest {
 		System.out.println("double pi = " + pi);
 		System.out.println("int number = " + number);
 		System.out.println("result = " + result);
+		System.out.println("=========================");
+		
+		// 5. byte 타입으로 result를 변환해서 저장
+		byte buffer = (byte) result;
+		System.out.println("int result = " + result);
+		System.out.println("byte buffer = " + buffer);
 		
 
 	}
