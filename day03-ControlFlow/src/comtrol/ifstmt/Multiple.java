@@ -40,6 +40,9 @@ public class Multiple {
 		
 		//. 사용
 		if ( input%2==0 )
+			// 위의 ()안의 연산은 연산자 우선순위에 의해
+			// input %2 의 연산이 먼저 수행되고 난 후
+			// 그 결과가 0과 같은지 == 연산자가 동작한다.
 		{
 			result = "2의 배수입니다.";
 		}
@@ -48,19 +51,11 @@ public class Multiple {
 			result = "2의 배수가 아닙니다.";
 		}
 		System.out.printf("입력값 %d(은)는 %s", input, result);	
+		
+		//(2)--------------------------------------
+		
+	
+		
 	}
 }
-
-
-		if ( input%2==0 )
-		{
-			result = "2의 배수입니다.";
-		}
-		else
-		{
-			result = "2의 배수가 아닙니다.";
-		}
-		System.out.printf("입력값 %d(은)는 %s", input, result);	
-	}		
-}
-
+//과제 
