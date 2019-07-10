@@ -29,13 +29,13 @@ public class NineNineBreak {
 		}
 		System.out.println("==================");
 		System.out.println("레이블과 함께 쓰는 break");
-	OUT: for (stage = 2; stage <= 10; stage++) {
+	    OUT: for (stage = 2; stage <= 10; stage++) {
 			//단의 제목 출력
 			System.out.printf("%n%d 단 %n", stage);
 			// 내부 for loop : 1 ~ 9 까지 곱해지는 수를 반복수행
 		IN:	for (times = 1; times <= 10; times++) {
 				if (stage * times >50) {
-					break; //break는 가장 가까운 loop를 빠져 나간다.
+					break OUT; //break는 가장 가까운 loop를 빠져 나간다.
 				}
 				System.out.printf("%d x %d = %2d%n", stage, times, stage * times);
 			}
