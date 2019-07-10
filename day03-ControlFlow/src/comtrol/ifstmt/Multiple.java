@@ -39,6 +39,7 @@ public class Multiple {
 		input = scan.nextInt();
 		
 		//. 사용
+		// 입력값이 0인 경우 : 0은 2의 배수가 아닙니다.
 		if ( input%2==0 )
 			// 위의 ()안의 연산은 연산자 우선순위에 의해
 			// input %2 의 연산이 먼저 수행되고 난 후
@@ -49,6 +50,10 @@ public class Multiple {
 		else
 		{
 			result = "2의 배수가 아닙니다.";
+		}
+		while (input == 0)
+		{
+			System.out.println("2의 배수가 이닙니다.");
 		}
 		System.out.printf("입력값 %d(은)는 %s", input, result);	
 		

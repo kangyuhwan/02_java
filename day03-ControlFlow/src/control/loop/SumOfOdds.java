@@ -15,7 +15,7 @@ public class SumOfOdds {
 
 		while (num <= 100) {
 			if (num % 2 == 1) {
-				sum += num;
+				sum += num; //누적 더하기
 			}
 			num++;
 		}
