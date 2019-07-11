@@ -20,15 +20,25 @@ public class BestPitcher {
 			System.out.println((idx + 1) + "번째 팀 1~5선발 투수 방어율 : ");
 			for (int ind = 0; ind < era[idx].length; ind++) {
 				era[idx][ind] = scan.nextDouble();
-				era[idx][ind] = min += era[idx][ind];
+				
 			}
 		}
+		int i =0;
+		int j =0;
+		
 		System.out.println("최고의 투수는 ");
 		for (int idx = 0; idx < era.length; idx++) {
 			for (int ind = 0; ind < era[idx].length; ind++) {
-				System.out.printf("%d번째 팀%d선발 투수로 방어율은= %d입니다.%n", idx, ind, era[idx][ind]);
-			}
+				if (min > era[idx][ind]) {
+					min = era[idx][ind];
+					i=idx+1;
+					j=ind+1;
+				}
+				
+				
+			} 
+			
 		}
-
+		System.out.printf("%d번째 팀%d선발 투수로 방어율은= %f입니다.%n", i, j, min);
 	}
 }

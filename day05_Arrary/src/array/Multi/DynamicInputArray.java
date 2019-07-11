@@ -49,7 +49,6 @@ public class DynamicInputArray {
 			for (int ind = 0; ind < numbers2d[idx].length; ind++) {
 				System.out.printf("[%d][%d]=[%d]%n", idx, ind, numbers2d[idx][ind]);
 			}
-
 		}
 
 	}
