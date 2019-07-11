@@ -33,9 +33,17 @@ public class ForTest {
 		}
 		System.out.println("==========================");
 		
-		
+		// 제곱표 출력
 		for (num = 1; num <= 10; num++) {
 				System.out.printf("%d x %d = %d%n", num, num, num*num);
 		}
+		System.out.println("==========================");
+		// 제곱표 출력(배열, foreach 사용)
+		int[] numbers = {1,2,3,4,5,6,7,8,9,10};
+		
+		for (int nums : numbers) {
+			System.out.printf("%d x %d = %d%n", nums, nums, nums*nums);
+		}
+			
 	}
 }
