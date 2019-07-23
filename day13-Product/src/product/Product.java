@@ -22,7 +22,7 @@ package product;
  * 문서 주석으로 남기기 생성자 선언할 때 문서 주석 남기기 각 메소드 선언할 때, 메소드 설명을 문서 주석으로 남기기
  * 
  * @author Administrator
- *
+ *s
  */
 
 public class Product {
@@ -69,9 +69,9 @@ public class Product {
 	}
 
 	public int discount(double percentage) {
-		double discount;
-		discount = price * 0.2;
-		return percentage;
+		int result;
+		result = price * (int)(100-percentage)/100;
+		return result;
 	}
 
 	public void sell(int amount) {

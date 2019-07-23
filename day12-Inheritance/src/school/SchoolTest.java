@@ -45,5 +45,4 @@ public class SchoolTest {
 			personss.print();
 		}
 	}
-
 }
